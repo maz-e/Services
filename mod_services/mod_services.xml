@@ -9,8 +9,8 @@
 	<description>A simple module to show a columns with the company services.</description>
 
    <files>
-      <filename module="mod_slider">mod_slider.php</filename>
-      <filename>mod_slider.xml</filename>
+      <filename module="mod_sercives">mod_services.php</filename>
+      <filename>mod_services.xml</filename>
       <folder>tmpl</folder>
    </files>
    <config>
