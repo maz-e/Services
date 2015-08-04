@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4" client="site" method="upgrade">
+   <name>Services</name>
+	<version>1.0.0</version>
+	<creationDate>4/8/2015</creationDate>
+	<author>Miguel Angel Zapatero</author>
+	<authorEmail>miguel@bladis.com</authorEmail>
+	<copyright>Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.</copyright>
+	<description>A simple module to show a columns with the company services.</description>
+
+   <files>
+      <filename module="mod_slider">mod_slider.php</filename>
+      <filename>mod_slider.xml</filename>
+      <folder>tmpl</folder>
+   </files>
+   <config>
+      <fields name="params">
+         <fieldset name="basic">
+            <field
+             name="text_intro"
+             type="editor"
+             label="Texto de introduccion"
+             width="300"
+             filter="safehtml"
+            />
+         </fieldset>
+         <fieldset name="column_1" label="Column 1">
+            <field
+             name="title_1"
+             type="text"
+             label="Titulo"
+             description="Introduce un titulo"
+             size="10"
+            />
+            <field
+             name="description_1"
+             type="textarea"
+             label="Descripcion"
+             description="Introduce una descripcion"
+             rows="10"
+             cols="5"
+            />
+            <field
+				 name="img_column_1"
+				 type="media"
+				 label="Imagen"
+				 description="Selecciona una imagen de 200x200px"
+				 directory=""
+				/>
+            <field
+             name="alt_text_1"
+             type="text"
+             label="Texto alternativo"
+             description="Introduce un texto alternativo de la imagen"
+             size="10"
+            />
+            <field
+             name="btn_text_1"
+             type="text"
+             label="Texto del boton"
+             description="Introduce un texto para el boton"
+             size="10"
+            />
+            <field
+             name="btn_url_1"
+             type="url"
+             default=""
+             label="URL"
+             description=""
+             size="10"
+            />
+         </fieldset>
+      </fields>
+   </config>
+</extension>
