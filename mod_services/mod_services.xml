@@ -9,7 +9,7 @@
 	<description>A simple module to show a columns with the company services.</description>
 
    <files>
-      <filename module="mod_sercives">mod_services.php</filename>
+      <filename module="mod_services">mod_services.php</filename>
       <filename>mod_services.xml</filename>
       <folder>tmpl</folder>
    </files>
@@ -18,10 +18,10 @@
          <fieldset name="basic">
             <field
              name="text_intro"
-             type="editor"
+             type="textarea"
              label="Texto de introduccion"
-             width="300"
-             filter="safehtml"
+             rows="10"
+             cols="5"
             />
          </fieldset>
          <fieldset name="column_1" label="Column 1">
