@@ -70,6 +70,98 @@
              size="10"
             />
          </fieldset>
+         <fieldset name="column_2" label="Column 2">
+            <field
+             name="title_2"
+             type="text"
+             label="Titulo"
+             description="Introduce un titulo"
+             size="10"
+            />
+            <field
+             name="description_2"
+             type="textarea"
+             label="Descripcion"
+             description="Introduce una descripcion"
+             rows="10"
+             cols="5"
+            />
+            <field
+				 name="img_column_2"
+				 type="media"
+				 label="Imagen"
+				 description="Selecciona una imagen de 200x200px"
+				 directory=""
+				/>
+            <field
+             name="alt_text_2"
+             type="text"
+             label="Texto alternativo"
+             description="Introduce un texto alternativo de la imagen"
+             size="10"
+            />
+            <field
+             name="btn_text_2"
+             type="text"
+             label="Texto del boton"
+             description="Introduce un texto para el boton"
+             size="10"
+            />
+            <field
+             name="btn_url_2"
+             type="url"
+             default=""
+             label="URL"
+             description=""
+             size="10"
+            />
+         </fieldset>
+         <fieldset name="column_3" label="Column 3">
+            <field
+             name="title_3"
+             type="text"
+             label="Titulo"
+             description="Introduce un titulo"
+             size="10"
+            />
+            <field
+             name="description_3"
+             type="textarea"
+             label="Descripcion"
+             description="Introduce una descripcion"
+             rows="10"
+             cols="5"
+            />
+            <field
+				 name="img_column_3"
+				 type="media"
+				 label="Imagen"
+				 description="Selecciona una imagen de 200x200px"
+				 directory=""
+				/>
+            <field
+             name="alt_text_3"
+             type="text"
+             label="Texto alternativo"
+             description="Introduce un texto alternativo de la imagen"
+             size="10"
+            />
+            <field
+             name="btn_text_3"
+             type="text"
+             label="Texto del boton"
+             description="Introduce un texto para el boton"
+             size="10"
+            />
+            <field
+             name="btn_url_3"
+             type="url"
+             default=""
+             label="URL"
+             description=""
+             size="10"
+            />
+         </fieldset>
       </fields>
    </config>
 </extension>
