@@ -63,12 +63,10 @@
             />
             <field
              name="btn_url_1"
-             type="url"
-             default=""
-             label="URL"
-             description=""
-             size="10"
-            />
+             type="menuitem"
+             default="45"
+             label="Select a menu item"
+             description="Select a menu item" />
          </fieldset>
          <fieldset name="column_2" label="Column 2">
             <field
@@ -109,12 +107,10 @@
             />
             <field
              name="btn_url_2"
-             type="url"
-             default=""
-             label="URL"
-             description=""
-             size="10"
-            />
+             type="menuitem"
+             default="45"
+             label="Select a menu item"
+             description="Select a menu item" />
          </fieldset>
          <fieldset name="column_3" label="Column 3">
             <field
@@ -155,12 +151,10 @@
             />
             <field
              name="btn_url_3"
-             type="url"
-             default=""
-             label="URL"
-             description=""
-             size="10"
-            />
+             type="menuitem"
+             default="45"
+             label="Select a menu item"
+             description="Select a menu item" />
          </fieldset>
       </fields>
    </config>

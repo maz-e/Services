@@ -1,6 +1,7 @@
 <?php
 // No direct access
 defined('_JEXEC') or die;
+$menu = $app->getMenu();
 ?>
 <div class="middle-section blue-grey">
 	<div class="container">
@@ -16,6 +17,7 @@ defined('_JEXEC') or die;
             </p>
 			</div>
          <?php for ($i=1; $i <= 3; $i++) : ?>
+			<?php $item_menu = $menu->getItem($params->get("btn_text_$i")); ?>
 				<div class="col s12 m4 center-align section">
 					<div class="section">
 						<img class="responsive-img circle" src="<?php echo $params->get("img_column_$i"); ?>" alt="<?php echo $params->get("alt_text_$i"); ?>">
@@ -25,7 +27,7 @@ defined('_JEXEC') or die;
 						<p class="blue-grey-text text-lighten-3">
                      <?php echo $params->get("description_$i"); ?>
                   </p>
-						<a class="btn-large red hide-on-med-and-up" href="<?php echo $params->get("btn_url_$i"); ?>">
+						<a class="btn-large red hide-on-med-and-up" href="<?php echo htmlspecialchars($item_menu->link); ?>">
                      <?php echo $params->get("btn_text_$i"); ?>
                   </a>
 					</div>
@@ -34,8 +36,9 @@ defined('_JEXEC') or die;
 		</div>
 		<div class="row hide-on-small-only">
 			<?php for($i=1; $i <= 3; $i++) : ?>
+			<?php $item_menu = $menu->getItem($params->get("btn_text_$i")); ?>
 				<div class="col s12 m4 center-align">
-					<a class="btn-large red" href="<?php echo $params->get("btn_url_$i"); ?>">
+					<a class="btn-large red" href="<?php echo htmlspecialchars($item_menu->link); ?>">
 						<?php echo $params->get("btn_text_$i"); ?>
 					</a>
 				</div>
