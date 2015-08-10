@@ -38,7 +38,7 @@ $menu = $app->getMenu();
 			<?php for($i=1; $i <= 3; $i++) : ?>
 			<?php $item_menu = $menu->getItem($params->get("btn_url_$i")); ?>
 				<div class="col s12 m4 center-align">
-					<a class="btn-large red" href="<?php echo htmlspecialchars($item_menu->route); ?>">
+					<a class="btn-large red" href="index.php/<?php echo htmlspecialchars($item_menu->route); ?>">
 						<?php echo $params->get("btn_text_$i"); ?>
 					</a>
 				</div>
