@@ -27,7 +27,7 @@ $menu = $app->getMenu();
 						<p class="blue-grey-text text-lighten-3">
                      <?php echo $params->get("description_$i"); ?>
                   </p>
-						<a class="btn-large red hide-on-med-and-up" href="<?php echo htmlspecialchars($item_menu->route); ?>">
+						<a class="btn-large red hide-on-med-and-up" href="index.php/<?php echo htmlspecialchars($item_menu->route); ?>">
                      <?php echo $params->get("btn_text_$i"); ?>
                   </a>
 					</div>
